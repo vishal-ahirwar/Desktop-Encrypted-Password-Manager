@@ -1,5 +1,5 @@
 #Copyright© 2022 Vishal Ahirwar.
-from tkinter import*
+from tkinter import Tk,Text,Entry,Button,Label,Canvas,PhotoImage
 
 def InitManager():
     window=Tk()
@@ -10,11 +10,11 @@ def InitManager():
     canvas.create_image(100,100,image=logo_img)
     canvas.grid(column=1,row=0)
     Label(text="Website Url/Name:").grid(column=0,row=1)
-    website=Entry(width=25)
+    website=Entry(width=25,bg="white")
     website.grid(column=1,row=1)
-    email=Entry(width=25)
+    email=Entry(width=25,bg="white")
     email.grid(column=1,row=2)
-    password=Entry(width=26)
+    password=Entry(width=26,bg="white")
     password.grid(column=1,row=3)
     btn_gen=Button(text="Generate Password")
     btn_gen.grid(column=2,row=3)
@@ -22,7 +22,7 @@ def InitManager():
     btn_save.grid(column=1,row=4)
     btn_search=Button(text="Search and Decrypt Password")
     btn_search.grid(column=2,row=1)
-    Label(text="Copyright© 2022 Vishal Ahirwar.").grid(column=0,row=6)
+    Label(text="copyright© 2022 vishal ahirwar.").grid(column=0,row=6)
     Label(text="Email/Username:").grid(column=0,row=2)
     Label(text="Password:").grid(column=0,row=3)
     window.mainloop()
